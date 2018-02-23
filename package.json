@@ -1,22 +1,56 @@
 {
-    "author": {
-        "email": "junk@clearblade.com"
-    },
-    "clouds": [],
-    "description": "",
-    "domains": [],
-    "gateways": [],
-    "image_url": "https://docs.clearblade.com/v/3/static/img/default_package.png",
-    "keywords": [
-        "clearblade",
-        "iot",
-        "platform"
-    ],
-    "license": "MIT",
-    "name": "a44234",
-    "private": false,
-    "prog_lang": [],
-    "protocols": [],
-    "things": [],
-    "version": ""
+  "name": "regression-toolkit",
+  "version": "1.0.0",
+  "description": "Regression analysis toolkit for linear, exponential, logarithmic, power, and polynomial models",
+  "main": "regression-toolkit",
+  "scripts": {
+    "build": "npx babel ./node_modules/regression/src/regression.js -o code/libraries/regression/regression.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rreinold/regression-toolkit.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rreinold/regression-toolkit/issues"
+  },
+  "homepage": "https://github.com/rreinold/regression-toolkit#readme",
+  "image_url": "https://raw.githubusercontent.com/rreinold/regression-toolkit/master/screenshot.png",
+  "asset_types": [
+    "Code Libraries"
+  ],
+  "author": {
+    "email": "rob@clearblade.com"
+  },
+  "private": false,
+  "keywords": [
+    "regression",
+    "model",
+    "modeling",
+    "vibration",
+    "detection",
+    "ML",
+    "anomaly",
+    "aberration",
+    "anomaly detection",
+    "machine learning"
+  ],
+  "programming_lang": "javascript",
+  "cloud": [],
+  "things": [],
+  "domains": ["Preventative Maintenance", "Anomaly Detection", "Smart Buildings"],
+  "protocols": [],
+  "gateways": [],
+  "dependencies": {
+    "regression": "^2.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "presets": [
+    "env"
+  ]
 }
